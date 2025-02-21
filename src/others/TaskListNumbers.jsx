@@ -5,7 +5,7 @@ const tasks = [
   { id: 4, title: "Pending", count: 3, bgColor: "bg-yellow-400" },
 ];
 
-export default function TaskList() {
+const TaskListNumbers = () => {
   return (
     <div className="flex flex-wrap justify-between gap-5 mt-10 font-bold text-[#141414]">
       {tasks.map((task) => (
@@ -19,4 +19,6 @@ export default function TaskList() {
       ))}
     </div>
   );
-}
+};
+
+export default TaskListNumbers;
